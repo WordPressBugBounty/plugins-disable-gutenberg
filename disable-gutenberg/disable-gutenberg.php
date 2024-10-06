@@ -10,8 +10,8 @@
 	Contributors: specialk
 	Requires at least: 4.9
 	Tested up to: 6.7
-	Stable tag: 3.2
-	Version:    3.2
+	Stable tag: 3.2.1
+	Version:    3.2.1
 	Requires PHP: 5.6.20
 	Text Domain: disable-gutenberg
 	Domain Path: /languages
@@ -76,7 +76,7 @@ if (!class_exists('DisableGutenberg')) {
 		
 		function constants() {
 			
-			if (!defined('DISABLE_GUTENBERG_VERSION')) define('DISABLE_GUTENBERG_VERSION', '3.2');
+			if (!defined('DISABLE_GUTENBERG_VERSION')) define('DISABLE_GUTENBERG_VERSION', '3.2.1');
 			if (!defined('DISABLE_GUTENBERG_REQUIRE')) define('DISABLE_GUTENBERG_REQUIRE', '4.9');
 			if (!defined('DISABLE_GUTENBERG_AUTHOR'))  define('DISABLE_GUTENBERG_AUTHOR',  'Jeff Starr');
 			if (!defined('DISABLE_GUTENBERG_NAME'))    define('DISABLE_GUTENBERG_NAME',    __('Disable Gutenberg', 'disable-gutenberg'));
