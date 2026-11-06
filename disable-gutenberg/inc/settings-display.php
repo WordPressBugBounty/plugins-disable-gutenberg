@@ -13,8 +13,8 @@ function disable_gutenberg_display_settings() { ?>
 	
 	<div class="wrap">
 		<h1>
-			<span class="fa fa-pad fa-gear"></span> <?php echo DISABLE_GUTENBERG_NAME; ?> 
-			<span class="disable-gutenberg-version"><?php echo DISABLE_GUTENBERG_VERSION; ?></span>
+			<span class="fa fa-pad fa-gear"></span> <?php echo esc_html(DISABLE_GUTENBERG_NAME); ?> 
+			<span class="disable-gutenberg-version"><?php echo esc_html(DISABLE_GUTENBERG_VERSION); ?></span>
 		</h1>
 		<form method="post" action="options.php">
 			
@@ -24,7 +24,7 @@ function disable_gutenberg_display_settings() { ?>
 				submit_button(); 
 			?>
 			
-			<div class="dg-pro"><?php _e('&#9824; DG Pro currently in development :)', 'disable-gutenberg'); ?></div>
+			<div class="dg-pro"><?php esc_html_e('&#9824; DG Pro currently in development :)', 'disable-gutenberg'); ?></div>
 			
 		</form>
 	</div>

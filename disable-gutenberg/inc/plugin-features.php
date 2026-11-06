@@ -85,6 +85,7 @@ function disable_gutenberg_page_row_actions($actions, $post) {
 	
 	$block_text = __('Block Edit', 'disable-gutenberg');
 	
+	/* translators: this is link text */
 	$block_label = sprintf(__('Edit &#8220;%s&#8221; in the Block Editor', 'disable-gutenberg'), $title);
 	
 	$block_action = sprintf('<a href="%s" aria-label="%s" title="%s">%s</a>', esc_url($block_url), esc_attr($block_label), esc_attr($block_label), esc_html($block_text));
@@ -95,6 +96,7 @@ function disable_gutenberg_page_row_actions($actions, $post) {
 	
 	$classic_text = __('Classic Edit', 'disable-gutenberg');
 	
+	/* translators: this is link text */
 	$classic_label = sprintf(__('Edit &#8220;%s&#8221; in the Classic Editor', 'disable-gutenberg'), $title);
 	
 	$classic_action = sprintf('<a href="%s" aria-label="%s" title="%s">%s</a>', esc_url($classic_url), esc_attr($classic_label), esc_attr($classic_label), esc_html($classic_text));

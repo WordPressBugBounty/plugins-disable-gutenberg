@@ -1,5 +1,7 @@
 <?php // Frontend stuff..
 
+if (!defined('ABSPATH')) exit;
+
 function disable_gutenberg_wp_enqueue_scripts() {
 	
 	global $wp_query;

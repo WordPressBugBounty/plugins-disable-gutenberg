@@ -9,9 +9,9 @@
 	Donate link: https://monzillamedia.com/donate.html
 	Contributors: specialk
 	Requires at least: 4.9
-	Tested up to: 7.1
-	Stable tag: 3.3.2
-	Version:    3.3.2
+	Tested up to: 7.2
+	Stable tag: 3.4
+	Version:    3.4
 	Requires PHP: 5.6.20
 	Text Domain: disable-gutenberg
 	Domain Path: /languages
@@ -76,7 +76,7 @@ if (!class_exists('DisableGutenberg')) {
 		
 		function constants() {
 			
-			if (!defined('DISABLE_GUTENBERG_VERSION')) define('DISABLE_GUTENBERG_VERSION', '3.3.2');
+			if (!defined('DISABLE_GUTENBERG_VERSION')) define('DISABLE_GUTENBERG_VERSION', '3.4');
 			if (!defined('DISABLE_GUTENBERG_REQUIRE')) define('DISABLE_GUTENBERG_REQUIRE', '4.9');
 			if (!defined('DISABLE_GUTENBERG_AUTHOR'))  define('DISABLE_GUTENBERG_AUTHOR',  'Jeff Starr');
 			if (!defined('DISABLE_GUTENBERG_NAME'))    define('DISABLE_GUTENBERG_NAME',    'Disable Gutenberg');
@@ -247,13 +247,13 @@ if (!class_exists('DisableGutenberg')) {
 		
 		function __clone() {
 			
-			_doing_it_wrong(__FUNCTION__, esc_html__('Sorry, pal!', 'disable-gutenberg'), DISABLE_GUTENBERG_VERSION);
+			_doing_it_wrong(__FUNCTION__, esc_html__('Sorry, pal!', 'disable-gutenberg'), esc_html(DISABLE_GUTENBERG_VERSION));
 			
 		}
 		
 		function __wakeup() {
 			
-			_doing_it_wrong(__FUNCTION__, esc_html__('Sorry, pal!', 'disable-gutenberg'), DISABLE_GUTENBERG_VERSION);
+			_doing_it_wrong(__FUNCTION__, esc_html__('Sorry, pal!', 'disable-gutenberg'), esc_html(DISABLE_GUTENBERG_VERSION));
 			
 		}
 		

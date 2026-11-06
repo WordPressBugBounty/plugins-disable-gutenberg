@@ -230,19 +230,19 @@ function disable_gutenberg_callback_reset($args) {
 function disable_gutenberg_callback_rate($args) {
 	
 	$href  = 'https://wordpress.org/support/plugin/'. DISABLE_GUTENBERG_SLUG .'/reviews/?rate=5#new-post';
-	$title = esc_attr__('Please give a 5-star rating! A huge THANK YOU for your support!', 'disable-gutenberg');
-	$text  = isset($args['label']) ? $args['label'] : esc_html__('Show support with a 5-star rating&nbsp;&raquo;', 'disable-gutenberg');
+	$title = __('Please give a 5-star rating! A huge THANK YOU for your support!', 'disable-gutenberg');
+	$text  = isset($args['label']) ? $args['label'] : __('Show support with a 5-star rating&nbsp;&raquo;', 'disable-gutenberg');
 	
-	echo '<a target="_blank" rel="noopener noreferrer" class="disable-gutenberg-rate-plugin" href="'. $href .'" title="'. $title .'">'. $text .'</a>';
+	echo '<a target="_blank" rel="noopener noreferrer" class="disable-gutenberg-rate-plugin" href="'. esc_url($href) .'" title="'. esc_attr($title) .'">'. esc_html($text) .'</a>';
 	
 }
 
 function disable_gutenberg_callback_support($args) {
 	
 	$href  = 'https://monzillamedia.com/donate.html';
-	$title = esc_attr__('Donate via PayPal, credit card, or cryptocurrency', 'disable-gutenberg');
-	$text  = isset($args['label']) ? $args['label'] : esc_html__('Show support with a small donation&nbsp;&raquo;', 'disable-gutenberg');
+	$title = __('Donate via PayPal, credit card, or cryptocurrency', 'disable-gutenberg');
+	$text  = isset($args['label']) ? $args['label'] : __('Show support with a small donation&nbsp;&raquo;', 'disable-gutenberg');
 	
-	echo '<a target="_blank" rel="noopener noreferrer" class="disable-gutenberg-show-support" href="'. $href .'" title="'. $title .'">'. $text .'</a>';
+	echo '<a target="_blank" rel="noopener noreferrer" class="disable-gutenberg-show-support" href="'. esc_url($href) .'" title="'. esc_attr($title) .'">'. esc_html($text) .'</a>';
 	
 }

@@ -9,9 +9,9 @@ Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Contributors: specialk
 Requires at least: 4.9
-Tested up to: 7.1
-Stable tag: 3.3.2
-Version:    3.3.2
+Tested up to: 7.2
+Stable tag: 3.4
+Version:    3.4
 Requires PHP: 5.6.20
 Text Domain: disable-gutenberg
 Domain Path: /languages
@@ -300,18 +300,16 @@ Thank you to everyone for using Disable Gutenberg and for all the [awesome 5-sta
 If you have any feedback or suggestions to make this plugin the absolute best it can be, and/or would like to help with development, please reach me via the [contact form](https://plugin-planet.com/support/#contact) at Plugin Planet.
 
 
-**3.3.2 (2026/07/18)**
+**3.4 (2026/11/06)**
 
+* Checks plugin with Plugin Check
+* Improves security of core functions
+* Improves security of plugin settings
+* Improves sanitization of JavaScript output
+* Improves security of internal redirects
+* Improves security of plugin files
 * Updates plugin settings page
-* Tests on WordPress 7.1
-
-
-**3.3.1 (2026/04/17)**
-
-* Fixes bug with reset options
-* Updates plugin settings page
-* Improves readme.txt documentation
-* Tests on WordPress 7.0
+* Tests on WordPress 7.2
 
 
 Full changelog @ [https://plugin-planet.com/wp/changelog/disable-gutenberg.txt](https://plugin-planet.com/wp/changelog/disable-gutenberg.txt)

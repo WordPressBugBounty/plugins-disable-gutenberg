@@ -30,10 +30,10 @@ function disable_gutenberg_admin_print_scripts() {
 		
 	<script type="text/javascript">
 		var 
-		alert_reset_options_title   = '<?php _e('Confirm Reset',            'disable-gutenberg'); ?>',
-		alert_reset_options_message = '<?php _e('Restore default options?', 'disable-gutenberg'); ?>',
-		alert_reset_options_true    = '<?php _e('Yes, make it so.',         'disable-gutenberg'); ?>',
-		alert_reset_options_false   = '<?php _e('No, abort mission.',       'disable-gutenberg'); ?>';
+		alert_reset_options_title   = '<?php esc_html_e('Confirm Reset',            'disable-gutenberg'); ?>',
+		alert_reset_options_message = '<?php esc_html_e('Restore default options?', 'disable-gutenberg'); ?>',
+		alert_reset_options_true    = '<?php esc_html_e('Yes, make it so.',         'disable-gutenberg'); ?>',
+		alert_reset_options_false   = '<?php esc_html_e('No, abort mission.',       'disable-gutenberg'); ?>';
 	</script>
 	
 	<?php endif;

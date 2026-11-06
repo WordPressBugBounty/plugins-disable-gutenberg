@@ -473,7 +473,7 @@ function disable_gutenberg_safari_18_temp_fix() {
 		?>
 		
 		<style id="classic-editor-safari-18-temp-fix">
-			_::-webkit-full-page-media, _:future, :root #post-body #postbox-container-2 { clear: <?php echo $clear; ?>; }
+			_::-webkit-full-page-media, _:future, :root #post-body #postbox-container-2 { clear: <?php echo esc_html($clear); ?>; }
 		</style>
 		
 		<?php
